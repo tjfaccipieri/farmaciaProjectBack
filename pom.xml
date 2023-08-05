@@ -15,7 +15,7 @@
 	<name>Farmacia</name>
 	<description>Farmácia</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<repositories>
 		<repository>
