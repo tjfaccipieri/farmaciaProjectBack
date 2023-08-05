@@ -36,7 +36,7 @@ public class EnderecoController {
 	@GetMapping("/{id}") 
 	public ResponseEntity<Endereco> getById(@PathVariable Long id){
 		return enderecoRepository.findById(id)
-			.map(resp -> ResponseEntity.ok(resp))
+			.map(ResponseEntity::ok)
 			.orElse(ResponseEntity.notFound().build());	
 	}
 	

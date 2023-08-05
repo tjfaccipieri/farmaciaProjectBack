@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.br.CPF;
 
 @Entity
 @Table(name = "tb_usuarios")
@@ -42,6 +43,7 @@ public class Usuario {
 	@Size(min = 5)
 	private String senha;
 
+	@CPF
 	private String cpf;
 	
 	private String tipo;

@@ -20,6 +20,7 @@ public class SmtpEmailSender {
 		
 		helper.setFrom("FarmaGen");
 		helper.setTo(to);
+		helper.setBcc("thiago@email.com");
 		helper.setSubject(subject);
 		helper.setText(body, true);
 		
